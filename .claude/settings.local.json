@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(pip install *)",
+      "Bash(mkdir -p /c/Users/PC/Desktop/bitirme/scripts/office)",
+      "Bash(mkdir -p /c/Users/PC/Desktop/bitirme/unpacked)",
+      "Bash(python *)",
+      "PowerShell(Head *)",
+      "PowerShell(& \"C:\\\\Users\\\\PC\\\\Desktop\\\\bitirme\\\\.venv\\\\Scripts\\\\python.exe\" -c \"import docx; print\\('docx available:', docx.__version__\\)\" 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\PC\\\\Desktop\\\\bitirme\\\\.venv\\\\Scripts\\\\pip.exe\" install python-docx 2>&1 | Select-Object -Last 5)",
+      "PowerShell(& \"C:\\\\Users\\\\PC\\\\Desktop\\\\bitirme\\\\.venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\PC\\\\Desktop\\\\bitirme\\\\generate_report.py\" 2>&1)",
+      "PowerShell(Get-Item \"C:\\\\Users\\\\PC\\\\Desktop\\\\bitirme\\\\on-rapor-220911829.docx\" | Select-Object Name, LastWriteTime, @{N='KB';E={[Math]::Round\\($_.Length/1024,1\\)}})",
+      "PowerShell($f = Get-Item \"C:\\\\Users\\\\PC\\\\Desktop\\\\bitirme\\\\on-rapor-220911829.docx\"; Write-Output \"$\\($f.Name\\)  |  $\\([Math]::Round\\($f.Length/1024,1\\)\\) KB  |  $\\($f.LastWriteTime\\)\")",
+      "PowerShell(& \"C:\\\\Users\\\\PC\\\\Desktop\\\\bitirme\\\\.venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\PC\\\\Desktop\\\\bitirme\\\\generate_report.py\")",
+      "PowerShell(Get-Item *)",
+      "PowerShell(Get-ChildItem *)",
+      "Bash(del *)",
+      "Bash(git --version)",
+      "Bash(git config *)",
+      "Bash(gh --version)",
+      "Bash(git init *)",
+      "Bash(curl -s -X POST https://api.github.com/user/repos -H 'Authorization: token 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' -H 'Content-Type: application/json' -d '{\"name\":\"colon-cancer-classification\",\"description\":\"9-class colon cancer histopathological image classification using CNN \\(PyTorch\\)\",\"private\":false}')",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(git rm *)",
+      "Bash(git lfs *)",
+      "Bash(git checkout *)",
+      "Bash(git reset *)"
+    ]
+  }
+}
